@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="34px" viewBox="0 0 13 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>man</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="56.125%" y1="0%" x2="44.9112854%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#6CEFFF" offset="0%"></stop>
+            <stop stop-color="#5E77FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="DASHBOARD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00_Dashboard_DE" transform="translate(-551.000000, -1372.000000)" fill="url(#linearGradient-1)">
+            <g id="Employees" transform="translate(288.000000, 1200.000000)">
+                <g id="Group-3" transform="translate(164.000000, 94.000000)">
+                    <g id="icons" transform="translate(75.200000, 78.092308)">
+                        <path d="M32.7906977,8.4078712 C34.6404293,8.4078712 36.1538462,9.92128801 36.1538462,11.7710197 L36.1538462,21.019678 L33.6314848,21.019678 L33.6314848,33.6314848 L26.9051878,33.6314848 L26.9051878,21.019678 L24.3828265,21.019678 L24.3828265,11.7710197 C24.3828265,9.92128801 25.8962433,8.4078712 27.745975,8.4078712 L32.7906977,8.4078712 Z M30.2683363,0 C32.1348837,0 33.6314848,1.49660107 33.6314848,3.36314848 C33.6314848,5.22969589 32.1348837,6.72629696 30.2683363,6.72629696 C28.4017889,6.72629696 26.9051878,5.22969589 26.9051878,3.36314848 C26.9051878,1.49660107 28.4017889,0 30.2683363,0 Z" id="man"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
