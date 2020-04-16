@@ -1,0 +1,35 @@
+<div class="d-flex wrapper" [class.wrapper--toggled]="isMenuToggled">
+
+  <div class="bg-light border-right sidebar-wrapper">
+    <div class="sidebar-heading">Statistics Demo</div>
+    <div class="list-group list-group-flush">
+      <a routerLink="/" routerLinkActive="sidebar-item--active" class="sidebar-item list-group-item list-group-item-action">
+        Statistics
+      </a>
+      <a routerLink="/shortcuts" routerLinkActive="sidebar-item--active" class="sidebar-item list-group-item list-group-item-action">
+        Knowledge
+      </a>
+      <a routerLink="/overview" routerLinkActive="sidebar-item--active" class="sidebar-item list-group-item list-group-item-action">
+        Chat
+      </a>
+      <a routerLink="/events" routerLinkActive="sidebar-item--active" class="sidebar-item list-group-item list-group-item-action">
+        Employers
+      </a>
+      <a routerLink="/profile" routerLinkActive="sidebar-item--active" class="sidebar-item list-group-item list-group-item-action">
+        Companies
+      </a>
+      <a routerLink="/status" routerLinkActive="sidebar-item--active" class="sidebar-item list-group-item list-group-item-action">
+        Calendar
+      </a>
+    </div>
+  </div>
+
+  <div class="page-content-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+      <button class="btn btn-primary nav-btn" (click)="toggleMenu()">Toggle Menu</button>
+    </nav>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

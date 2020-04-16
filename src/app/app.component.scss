@@ -1,0 +1,62 @@
+body {
+  overflow-x: hidden;
+}
+
+.nav {
+  &-btn {
+    background-color: #071A83;
+    border-color: #071A83;
+  }
+}
+
+.sidebar {
+  &-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin .25s ease-out;
+
+    @media (min-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  &-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  &-item {
+    background-color: #dae0e5;
+    width: 15rem;
+
+    &--active {
+      background-color: #071A83;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+  }
+}
+
+
+.page-content-wrapper {
+  min-width: 100vw;
+  background-color: #efefef;
+
+  @media (min-width: 768px) {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+.wrapper {
+  &--toggled {
+    .sidebar-wrapper {
+      margin-left: 0;
+
+      @media (min-width: 768px) {
+        margin-left: -15rem;
+      }
+    }
+  }
+}

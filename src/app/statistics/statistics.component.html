@@ -1,0 +1,184 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon card-icon--employees">
+            <span class="material-icons">business_center</span>
+          </div>
+          <p class="card-title">Employees total</p>
+          <p class="card-value">3.100</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-update-time">
+            <span class="material-icons">update</span>
+            just updated
+          </span>
+          <button class="btn card-btn">
+            MORE INFO
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon card-icon--contracts">
+            <span class="material-icons">library_books</span>
+          </div>
+          <p class="card-title">Contracts total</p>
+          <p class="card-value">2.558</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-update-time">
+            <span class="material-icons">update</span>
+            just updated
+          </span>
+          <button class="btn card-btn">
+            MORE INFO
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon card-icon--documentations">
+            <span class="material-icons">folder_shared</span>
+          </div>
+          <p class="card-title">Documentations</p>
+          <p class="card-value">+455</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-update-time">
+            <span class="material-icons">update</span>
+            just updated
+          </span>
+          <button class="btn card-btn">
+            MORE INFO
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-xl-3">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-icon card-icon--consultations">
+            <span class="material-icons">chat_bubble</span>
+          </div>
+          <p class="card-title">Consultations</p>
+          <p class="card-value">1.200</p>
+        </div>
+        <div class="card-footer">
+          <span class="card-update-time">
+            <span class="material-icons">update</span>
+            just updated
+          </span>
+          <button class="btn card-btn">
+            MORE INFO
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-xl-4">
+      <div class="card card--large">
+        <div class="card-header card-header--lg">
+          <p class="card-lg-title">Employees/Gender</p>
+          <span class="card-header-link">
+            Missing Data
+            <span class="material-icons">arrow_right</span>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="pie-icons">
+            <span class="pie-icon pie-icon--female"></span>
+            <span class="pie-icon pie-icon--male"></span>
+          </div>
+          <ngx-charts-pie-chart
+            [scheme]="{ domain: ['#5E77FF', '#BC5DE6'] }"
+            [results]="pieChartData"
+            [gradient]="true"
+            [doughnut]="true"
+            [animations]="true"
+            [arcWidth]="0.35">
+          </ngx-charts-pie-chart>
+        </div>
+        <div class="card-footer card-footer--chart">
+          <span class="card-update-time card-update-time--left">
+            <span class="material-icons">update</span>
+            just updated
+          </span>
+          <div class="pie-chart-legend">
+            <div class="pie-chart-legend-item">
+              <div class="pie-chart-legend-color pie-chart-legend-color--female"></div>
+              <span class="pie-chart-legend-name">Female</span>
+            </div>
+            <div class="pie-chart-legend-item">
+              <div class="pie-chart-legend-color pie-chart-legend-color--male"></div>
+              <span class="pie-chart-legend-name">Male</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="card card--large">
+        <div class="card-header card-header--lg">
+          <p class="card-lg-title">Employees/Age</p>
+          <span class="card-header-link">
+            Missing Data
+            <span class="material-icons">arrow_right</span>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="chart-container chart-container--multi">
+            <ngx-charts-bar-vertical-2d
+              [scheme]="{ domain: ['#5E77FF', '#BC5DE6'] }"
+              [results]="multiChartData"
+              [yScaleMax]="50"
+              [roundEdges]="false"
+              [roundDomains]="true"
+              [showGridLines]="true"
+              [gradient]="true"
+              [yAxisTickFormatting]="getPercent"
+              [xAxis]="true"
+              [yAxis]="true">
+            </ngx-charts-bar-vertical-2d>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-xl-4">
+      <div class="card card--large">
+        <div class="card-header card-header--lg">
+          <p class="card-lg-title">Employees/Income</p>
+          <span class="card-header-link">
+            Missing Data
+            <span class="material-icons">arrow_right</span>
+          </span>
+        </div>
+        <div class="card-body">
+          <div class="chart-container chart-container--single">
+            <ngx-charts-bar-vertical
+              [scheme]="{ domain: ['#384BC5', '#5E77FF'] }"
+              [barPadding]="75"
+              schemeType="linear"
+              [roundEdges]="false"
+              [roundDomains]="true"
+              [trimXAxisTicks]="false"
+              [trimYAxisTicks]="false"
+              [rotateXAxisTicks]="false"
+              [results]="singleChartData"
+              [showGridLines]="true"
+              [gradient]="true"
+              [xAxis]="true"
+              [yAxis]="true">
+            </ngx-charts-bar-vertical>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
