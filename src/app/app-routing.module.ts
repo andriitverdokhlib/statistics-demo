@@ -6,16 +6,11 @@ import { StatisticsComponent } from "./statistics/statistics.component";
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'statistics',
-    pathMatch: 'full'
-  },
-  {
-    path: 'statistics',
     component: StatisticsComponent
   },
   {
     path: '**',
-    redirectTo: 'statistics'
+    redirectTo: '/'
   }
 ];
 
